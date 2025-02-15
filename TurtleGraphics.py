@@ -46,14 +46,18 @@ def squaresInSquares(jawn, num):
     jawn.up()
     jawn.goto(-150,150)
     jawn.down()
-    drawSquare(jawn, 300)
+    size = 300
+    drawSquare(jawn, size)
     for n in range(num):
         jawn.right(45)
         jawn.up()
         jawn.forward(30)
         jawn.down()
         jawn.left(45)
-        drawSquare(jawn, 250)
+        size = size - 50
+        drawSquare(jawn, size)
+            
+            
         
     
 def main():
